@@ -20,12 +20,13 @@ class chara {
         let feuRouge=0
 
         while(this.sanity>0 && feuRouge<30) {
-            feuRouge ++
-            console.log("\t"+feuRouge+" feus rouges ont été franchis.")
-            console.log("\n")
 
+            console.log("\n")
             const random=Math.floor(Math.random()*musicList.length)
             console.log(random,"Le morceau "+musicList[random]+" joue à la radio.")
+
+            feuRouge ++
+            console.log("\t"+feuRouge+" feus rouges ont été franchis.")
             
             if (feuRouge===30) {
                 let nbrChange=10-this.sanity
